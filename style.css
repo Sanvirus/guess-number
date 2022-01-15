@@ -1,117 +1,122 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 * {
     margin: 0;
     padding: 0;
-    font-family: "VT323", monospace;
-    font-weight: 100;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(25, 60, 60);
-    color: #fff;
-}
-
-.rig-up {
-    text-align: right;
-    margin: 10px;
+    font-family: "Press Start 2P", sans-serif;
+    color: #eee;
+    background-color: #222;
+    /* background-color: #60b347; */
 }
 
 
-/*both white buttons*/
+/* LAYOUT */
 
-.but {
-    width: 15vh;
-    height: 5vh;
-    border-radius: 0;
-    font-size: large;
-    min-height: 40px;
-    min-width: 90px;
+header {
+    position: relative;
+    height: 35vh;
+    border-bottom: 7px solid #eee;
 }
 
-.but:hover {
-    background-color: rgb(33, 199, 171);
-}
-
-
-/*everything under tytle*/
-
-.center {
-    text-align: center;
-}
-
-h1 {
-    font-size: xxx-large;
-    margin-bottom: 5vh;
-}
-
-.white-row {
-    width: 100vw;
-    border: #fff solid 2px;
-    height: 0;
-}
-
-.box {
-    width: 20vh;
-    height: 5vh;
-    background-color: #fff;
-    color: #000;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -2.5vh;
-    font-size: 5vh;
-    min-height: 30px;
-}
-
-
-/*where are two boxes in row*/
-
-.nice {
+main {
+    height: 65vh;
+    color: #eee;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     justify-content: space-around;
-    margin-top: 10vh;
-}
-
-
-/*left buttom box*/
-
-.space {
-    text-align: center;
-}
-
-.jup {
-    border: #fff solid 2px;
-    text-align: center;
-    width: 20vh;
-    height: 5vh;
-    color: #000;
-    font-size: 5vh;
-    min-height: 30px;
-    color: #fff;
 }
 
 .left {
-    margin-left: 3vh;
-    margin-top: 15px;
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right {
+    width: 52rem;
+    font-size: 2rem;
 }
 
 
-/*right bottom box*/
+/* ELEMENTS STYLE */
 
-.right-box {
-    font-size: 5vh;
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-@counter-style repeating-emoji {
-    system: syclic;
-    symbols: "\1F604""\1F617""\1F60B";
-    /*unicode code point*/
+.number {
+    background: #eee;
+    color: #333;
+    font-size: 6rem;
+    width: 15rem;
+    padding: 3rem 0rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
 }
 
-.emogies li {
-    list-style-type: repeating-emoji;
+.between {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 }
 
-#break {
-    margin-bottom: 40px;
+.again {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.guess {
+    background: none;
+    border: 4px solid #eee;
+    font-family: inherit;
+    color: inherit;
+    font-size: 5rem;
+    padding: 2.5rem;
+    width: 25rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 2rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.message {
+    margin-bottom: 8rem;
+    height: 3rem;
+}
+
+.label-score {
+    margin-bottom: 2rem;
 }
