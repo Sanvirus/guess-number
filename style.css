@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "VT323", monospace;
+    font-weight: 100;
+}
+
+body {
+    background-color: rgb(25, 60, 60);
+    color: #fff;
+}
+
+.rig-up {
+    text-align: right;
+    margin: 10px;
+}
+
+
+/*both white buttons*/
+
+.but {
+    width: 15vh;
+    height: 5vh;
+    border-radius: 0;
+    font-size: large;
+    min-height: 40px;
+    min-width: 90px;
+}
+
+.but:hover {
+    background-color: rgb(33, 199, 171);
+}
+
+
+/*everything under tytle*/
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-size: xxx-large;
+    margin-bottom: 5vh;
+}
+
+.white-row {
+    width: 100vw;
+    border: #fff solid 2px;
+    height: 0;
+}
+
+.box {
+    width: 20vh;
+    height: 5vh;
+    background-color: #fff;
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2.5vh;
+    font-size: 5vh;
+    min-height: 30px;
+}
+
+
+/*where are two boxes in row*/
+
+.nice {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+
+/*left buttom box*/
+
+.space {
+    text-align: center;
+}
+
+.jup {
+    border: #fff solid 2px;
+    text-align: center;
+    width: 20vh;
+    height: 5vh;
+    color: #000;
+    font-size: 5vh;
+    min-height: 30px;
+    color: #fff;
+}
+
+.left {
+    margin-left: 3vh;
+    margin-top: 15px;
+}
+
+
+/*right bottom box*/
+
+.right-box {
+    font-size: 5vh;
+}
+
+@counter-style repeating-emoji {
+    system: syclic;
+    symbols: "\1F604""\1F617""\1F60B";
+    /*unicode code point*/
+}
+
+.emogies li {
+    list-style-type: repeating-emoji;
+}
+
+#break {
+    margin-bottom: 40px;
+}
